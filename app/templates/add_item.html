@@ -1,0 +1,42 @@
+{% extends "parent.html" %}
+
+{% block content %}
+
+    <div class="row">
+        <h1>Register User</h1>
+        <div class="col-md-4">
+            <!-- Empty col -->
+        </div>
+        <div class="col-md-4">
+            <form action="" method="post" novalidate>
+                {{ form.hidden_tag() }}
+                <p>
+                    {{ form.name.label }}<br>
+                    {{ form.name(size=32) }}<br>
+                    {% for error in form.name.errors %}
+                    <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                </p>
+                <p>
+                    {{ form.price.label }}<br>
+                    {{ form.price(size=32) }}<br>
+                    {% for error in form.price.errors %}
+                    <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                </p>
+                <p>
+                    {{ form.per.label }}<br>
+                    {{ form.per(size=32) }}<br>
+                    {% for error in form.per.errors %}
+                    <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                </p>
+                <p>{{ form.submit() }}</p>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <!-- Empty col -->
+        </div>
+    </div>
+      
+{% endblock %}

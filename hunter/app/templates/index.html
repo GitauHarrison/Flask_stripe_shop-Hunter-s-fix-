@@ -1,6 +1,25 @@
-{% extends "parent.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-{% block content %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Marck+Script&display=swap" rel="stylesheet">    <link rel="stylesheet" type="text/css" href="static/custom.css">
+
+    <title>{{ title }} - Paige's Chewy Granola</title>
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="static/bee_vector.svg" alt="Logo" width="36" height="28.5" class="d-inline-block align-text-top">
+            Paige's Chewy Granola
+          </a>
+          <a class="nav-link" href="#">Contact Us</a>
+        </div>
+      </nav>      
+</head>
+<body>
 
     <div class="container py-4">
       <div class="p-5 mb-4 bg-light rounded-3">
@@ -14,9 +33,9 @@
       <div class="row align-items-md-stretch">
         <div class="col-md-6">
           <div class="h-100 p-5 text-bg-dark rounded-3">
-            <h2>How it's made</h2>
+            <h2>Change the background</h2>
             <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-            <button class="btn btn-outline-light" type="button">See inside</button>
+            <button class="btn btn-outline-light" type="button">Example button</button>
           </div>
         </div>
         <div class="col-md-6">
@@ -115,4 +134,50 @@
           </a>
         </li>
       </ul>
-{% endblock %}
+
+
+
+
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img class="mb-2" src="static/shop-window.svg" alt="" width="100" height="100">
+            <small class="d-block mb-3 text-muted">&copy; 2023</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Find us</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Events</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stores</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Online retailers</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Contact & <br> Social</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><img class="mb-2" src="/assets/telephone.svg" alt="" width="24" height="24">(405) 620-4693</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><img class="mb-2" src="/assets/envelope.svg" alt="" width="24" height="24"></a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><img class="mb-2" src="/assets/facebook.svg" alt="" width="24" height="24"></a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><img class="mb-2" src="/assets/instagram.svg" alt="" width="24" height="24"></a></li>
+            </ul>
+            
+          </div>
+        </div>
+      </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
